@@ -26,8 +26,37 @@ print(b)
 
 
 func one(name:String,day:String)->String{
-    return("hello"\(name) , ",today is "\(day))
+    
+    return("hello\(name) "+",today is  \(day)")
     
 }
-one(name:"zz",day:"th")
-print(one)
+
+print(one(name:"zz",day:"th"))
+
+var num1 = 1
+var num2 = 2
+num1 = num1 + num2
+print(num1)
+
+var n = 0
+var m = 0
+var array = [23,10,54,6,34,7,4,23]
+for n in (1..<array.count){
+    for m in (n..<array.count-1){
+        if array[m] > array[m+1]{
+            let tmp = array[m]
+            array[m] = array[m+1]
+            array[m+1] = tmp
+        }
+    }
+}
+var c = 0
+for c in 0...7{
+    print(array[c],terminator:" ")
+}
+
+
+
+for x in 0...10{
+    print("\(x)",terminator:"m")
+}
